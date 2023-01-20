@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 const users = [
-    { id: 1, username: 'Vadim', age: 30 }
+    { id: '1', username: 'Vadim', age: 30 }
 ];
 
 const createUser = (input) => {
@@ -22,7 +22,7 @@ const root = {
     getUser: ({ id }) => {
         return users.find((user) => user.id === id)
     },
-    createUser: (input) => {
+    createUser: ({ input }) => {
         const user = createUser(input);
         users.push(user);
         return user;

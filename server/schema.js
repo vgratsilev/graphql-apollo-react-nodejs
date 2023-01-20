@@ -33,7 +33,7 @@ const schema = buildSchema(`
     }
     
     type Mutation {
-        crateUser(input: UserInput): User
+        createUser(input: UserInput): User
     }
 `);
 
