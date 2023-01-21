@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/graphql-apollo-react-nodejs/static/css/main.773826ad.css",
+    "main.js": "/graphql-apollo-react-nodejs/static/js/main.356f3709.js",
+    "index.html": "/graphql-apollo-react-nodejs/index.html",
+    "main.773826ad.css.map": "/graphql-apollo-react-nodejs/static/css/main.773826ad.css.map",
+    "main.356f3709.js.map": "/graphql-apollo-react-nodejs/static/js/main.356f3709.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.773826ad.css",
+    "static/js/main.356f3709.js"
+  ]
+}
