@@ -1,10 +1,16 @@
-import {createRoot} from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
-const container = document.getElementById('root');
+const client = new ApolloClient({
+    uri: 'http://localhost:5000/graphql',
+    cache: new InMemoryCache(),
+});
 
-if (!container) {
-    throw new Error(`root container is not found. Can't mount App.`)
-}
-
-const root = createRoot(container);
-root.render()
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <ApolloProvider client={client}>
+        <App />
+    </ApolloProvider>
+);
