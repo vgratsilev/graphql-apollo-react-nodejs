@@ -47,7 +47,6 @@ const App = () => {
                 },
             },
         }).then(({ data }) => {
-            console.log(data);
             setUsername('');
             setAge(0);
         });
