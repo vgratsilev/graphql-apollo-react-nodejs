@@ -1,6 +1,8 @@
 ## Server part
 
-### How to start:
+Uploaded to Vercel https://graphql-apollo-react-nodejs.vercel.app/graphql
+
+### How to start locally:
 - execute `npm run dev`
 - open http://localhost:5000/graphql
 

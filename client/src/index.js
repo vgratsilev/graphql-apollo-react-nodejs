@@ -4,7 +4,10 @@ import App from './App';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-    uri: 'http://localhost:5000/graphql',
+    uri:
+        process.env.NODE_ENV === 'production'
+            ? 'https://graphql-apollo-react-nodejs.vercel.app/graphql'
+            : 'http://localhost:5000/graphql',
     cache: new InMemoryCache(),
 });
 
